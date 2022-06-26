@@ -11,6 +11,8 @@ df_nation = pd.read_csv("Data/state_data.csv", thousands = ",")
 external_stylesheets = ["https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css"]
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
+
 cols = ["Intake - Relinquished By Owner Total-Feline","Intake - Stray At Large Total-Feline","Intake - Transferred In Total-Feline","Intake - Owner Intended Euthanasia Total-Feline","Intakes - Other Intakes Total-Feline","Live Outcome - Adoption Total-Feline","Live Outcome - Returned To Owner Total-Feline","Live Outcome - Returned To Field Total-Feline","Live Outcome - Transferred Out Total-Feline","Live outcome - Other Live Outcome Total-Feline","Other Outcome - Died In Care Total-Feline","Other Outcome - Lost In Care Total-Feline","Other Outcome - Owner Intended Euthanasia Total-Feline","Other Outcome - Shelter Euthanasia Total-Feline","Intake - Relinquished By Owner Total-Canine","Intake - Stray At Large Total-Canine","Intake - Transferred In Total-Canine","Intake - Owner Intended Euthanasia Total-Canine","Intakes - Other Intakes Total-Canine","Live Outcome - Adoption Total-Canine","Live Outcome - Returned To Owner Total-Canine","Live Outcome - Returned To Field Total-Canine","Live Outcome - Transferred Out Total-Canine","Live outcome - Other Live Outcome Total-Canine","Other Outcome - Died In Care Total-Canine","Other Outcome - Lost In Care Total-Canine","Other Outcome - Owner Intended Euthanasia Total-Canine","Other Outcome - Shelter Euthanasia Total-Canine"]
 
 
