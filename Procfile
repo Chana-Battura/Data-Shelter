@@ -1,1 +1,1 @@
-web: gunicorn graph:app --log-file -
+web: gunicorn graph:server
